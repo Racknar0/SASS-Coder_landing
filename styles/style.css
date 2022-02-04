@@ -32,6 +32,7 @@ h2 {
 
 
 
+
 /* ---------- INICIO HEADER ------------- */
 /* ---------- inicio .header_arriba */
 
@@ -551,22 +552,129 @@ footer a:hover{
 
 /* ---------- INICIO BLOG ------------- */
 
+.mainBlog{
+  background-color: var(--blanco);
+  margin: 4rem 2rem 2rem 2rem;
+}
+
 .tittle-blog{
   font-family: var(--FuenteSec);
   text-align: center;
+  padding: 3rem 0;
+  font-size: 3rem;
+  text-transform: uppercase;
+
 }
 
-.coderack-article img {
-  width: 100px;
-  height: 100px;
-  border: 1px solid #000;
+.notificacionPpal__img {
+  width: min(90%, 19rem);
+  height: 300px;
+  display: block;
+  margin: 0 auto 1.3rem auto;
+  background-image: url(../img/admin.png);
+  background-size: cover;
+  background-position: center;
+  
 }
 
-.user-article img {
-  width: 100px;
-  height: 100px;
-  border: 1px solid #000;
+.notificacionPpal{
+  padding: 0rem 2rem 2rem 2rem;
 }
+
+.notificacionPpal > p{
+  font-size: 1.2rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 2rem;
+  font-weight: 600;
+  text-align: justify;
+}
+
+@media (min-width: 768px) {
+    .notificacionPpal{
+      display: flex;
+    }
+    .notificacionPpal > p {
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+}
+
+.separador {
+  border-bottom: 2px solid rgb(70, 70, 70);
+}
+/* .separador:last-of-type{
+  border-bottom: none;
+}
+ */
+
+.user__img {
+  width: min(100%, 19rem);
+  height: 300px;
+  display: block;
+  margin: 0 auto 1.3rem auto;
+  background-image: url(../img/user.webp);
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.articulo1__contenido{
+  font-size: 1.2rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0 2rem 2rem 2rem;
+  font-weight: 600;
+  text-align: justify;
+}
+
+.articulo1__footer {
+  padding: 0rem 2rem 2rem 2rem;
+  font-size: 1.3rem;
+  font-family: var(--fuenteTer);
+}
+
+.contenedoArticulos > h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.aside {
+  padding: 3rem;
+}
+
+.aside > h2 {
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.aside > p {
+  padding-bottom: 2rem;
+  text-align: justify;
+}
+
+
+@media (min-width: 1024px) {
+    .mainBlog__blog{
+      display: flex;
+    }
+    .contenedoArticulos{
+      width: 70%;
+    }
+    .aside{
+      width: 30%;
+      margin: 0;
+      padding: 1rem;
+    }
+
+    .separador{
+      border: none;
+    }
+}
+
+
+
+
 
 
 /* ---------- FIN BLOG ------------- */
