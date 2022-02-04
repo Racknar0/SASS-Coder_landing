@@ -776,22 +776,53 @@ fieldset legend {
 /* ---------- FIN CONTACT ------------- */
 
 /* ---------- INICIO ABOUT ------------- */
+.about {
+  background-color: var(--blanco);
+  margin: 7rem 5rem 2rem 5rem;
+ padding-bottom: 2rem;
+}
 
-.about img {
+
+.about > img {
   display: block;
   margin: 0 auto;
+  width: min(90%, 40rem)
 }
 
 .about p {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 2rem 2rem;
+  text-align: justify;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
 }
 
-
-.about__img40 {
-  width: 40%;
+.about__ImgWidth {
+  border-radius: 1.5rem;
+  height: 20rem;
 }
 
-.about__img25 {
-  width: 25%;
+.about__img40{
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+  width: min(90%, 35rem);
+  height: 20rem;
+}
+
+.about__img25{
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+  width: min(90%, 20rem);
+  height: 20rem;
+}
+
+@media (min-width: 1200px) {
+    .about_2{
+      display: flex;
+    }
+    .about_3{
+      display: flex;
+      justify-content: center;
+    }
 }
