@@ -15,16 +15,15 @@
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/style.css">
         <!-- Fuentes -->
-
         <link href="https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600;700;900&display=swap"
             rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
-        
-        <title>Gallery CodeRack</title>
+        <title>Home CodeRack</title>
     </head>
 
 
-<body>
+    <body>
+        <!-- header inicio -->
     <header>
 
         <div class="header__arriba">
@@ -34,6 +33,10 @@
             </a>
             <!-- menu de navegacion -->
             <nav class="header__nav">
+
+                <input type="checkbox" id="menu">
+                <label for="menu"><i class="fas fa-bars"></i></label>
+
                 <ul class="ul__nav">
                     <li><a href="index.html">Home</a></li>
                     <li class="activo"><a href="galeria.html">Gallery</a></li>
@@ -44,6 +47,13 @@
             </nav>
             <!-- boton dark -->
             <!-- <input type="button" value="Dark Mode"> -->
+        </div>
+
+
+        <div class="seccion-video">
+            <video class="header__video" src="media/ident_lg.mp4" autoplay loop muted>
+            </video>
+            <h3 class="header__text">Well done is better than well said...</h3>
         </div>
     </header>
 
