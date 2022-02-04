@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- fontawesome para uso de logo redes -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <!-- favicon -->
+        <link rel="shortcut icon" href="/img/favicon.ico">
+    
+        <!-- integracion de los estulos y normalizer -->
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <!-- Fuentes -->
+        <link href="https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600;700;900&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+        <title>Home CodeRack</title>
+    </head>
+    
+    <body>
+        <!-- header inicio -->
+        <header>
+    
+            <div class="header__arriba">
+                <!-- Insercion de link + imagen + su respectivo alt -->
+                <a class="header__link" href="index.html"><img class="header__logo" src="img/logo.png" alt="logo_coderack">
+                    <h1>CodeRack</h1>
+                </a>
+                <!-- menu de navegacion -->
+                <nav class="header__nav">
+                    <ul class="ul__nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="galeria.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li class="activo"><a href="contacto.html">Contact</a></li>
+                        <li><a href="nosotros.html">About</a></li>
+                    </ul>
+                </nav>
+                <!-- boton dark -->
+                <!-- <input type="button" value="Dark Mode"> -->
+            </div>
+    
+    
+            <div class="seccion-video">
+                <video class="header__video" src="media/ident_lg.mp4" autoplay loop>
+                </video>
+                <h3 class="header__text">Well done is better than well said...</h3>
+            </div>
+        </header>
+
+
+    <section>
+        <h1 class="titulo-contacto">Contact</h1>
+        <p class="info-contacto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facilis nam voluptas unde quasi, dolores
+            temporibus omnis totam eum voluptates, modi aspernatur harum tenetur corrupti ipsa earum pariatur obcaecati
+            a!</p>
+        <fieldset>
+
+            <legend>Contact Form</legend>
+            <form action="">
+
+                <label class="label label__name" for="name" name="name">Name</label><br>
+                <input class="input" type="text" placeholder="Escribe tus nombres" name="name" id="name" required><br><br>
+
+                <label class="label label__lastName" for="lastName" name="lastName">Last Name</label><br>
+                <input type="text" placeholder="Escribe tu apellidos" name="lastName" required><br><br>
+
+                <label class="label label__email" for="eMail" name="eMail">E-Mail</label><br>
+                <input type="email" placeholder="Escribe tu apellidos" name="eMail" required><br> <br>
+
+                <label class="label label__tel" for="tel" name="tel">Phone number</label><br>
+                <input type="tel" placeholder="Escribe tu Telefono" name="tel" required><br><br>
+
+                <label class="label label__date" for="date" name="tel">Date of filing of the order</label><br>
+                <input type="date" placeholder="Escribe tu Telefono" name="date" required><br><br>
+
+                <label  class="label label__service" for="service" name="service">Type of service</label><br>
+                <select name="service">
+                    <option>Web Programming</option>
+                    <option>Software development</option>
+                    <option>Computer maintenance</option>
+                    <option>Graphic Design</option>
+                </select><br><br>
+
+                <h3>Dispositivos que dejaste</h3>
+
+                <label for="mouse">Mouse</label>
+                <input type="checkbox" name="mouse" value="mouse">
+
+                <label for="keyboard">KeyBoard</label>
+                <input type="checkbox" name="keyboard" value="keyboard">
+
+                <label for="screen">Monitor</label>
+                <input type="checkbox" name="screen" value="screen"><br><br>
+
+                <label for="attach">Attach your invoice</label>
+                <input type="file" name="attach"><br><br>
+
+                <label for="textarea">Leave us your comment....</label><br>
+                <textarea name="textarea" id="" cols="30" rows="3"
+                    placeholder="write your comment"></textarea><br><br>
+                <input type="submit" value="Send Form">
+                <input type="reset" value="Reset" name="textarea"> <br>
+            </form>
+        </fieldset>
+
+    </section>
+
+
+
+    <footer>
+        <!-- seccion 1 footer -->
+        <h3>All rights reserved</h3>
+        <p>All CodeRack developments are registered trademarks®</p>
+
+        <!-- seccion 2 footer -->
+        <h3>Follow us on our social networks</h3>
+
+        <!-- logos redes -->
+        <div class="footer__logos">
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <a href=""><i class="fab fa-youtube-square"></i></a>
+            <a href=""><i class="fab fa-twitter-square"></i></a>
+            <a href=""><i class="fab fa-github-square"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>
