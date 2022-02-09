@@ -247,7 +247,7 @@ nav li a:active{
 .informacion1__info,
 .informacion2__info {
   font-size: 20px;
-  text-align: justify;
+  text-align: center;
   padding: 1rem 1rem 1rem 1rem;
 }
 
@@ -558,7 +558,7 @@ footer a:hover{
   padding-left: 2rem;
   padding-right: 2rem;
   margin-bottom: 4rem;
-  text-align: justify;
+  text-align: center;
 }
 
 /* ---------- FIN GALLERY ------------- */
@@ -599,7 +599,7 @@ footer a:hover{
   font-family: var(--FuenteSec);
   padding: 0;
   font-weight: 600;
-  text-align: justify;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -640,7 +640,7 @@ footer a:hover{
   font-family: var(--FuenteSec);
   padding: 0 2rem 2rem 2rem;
   font-weight: 600;
-  text-align: justify;
+  text-align: center;
 }
 
 .articulo1__footer {
@@ -664,7 +664,7 @@ footer a:hover{
 }
 .aside > p {
   padding-bottom: 2rem;
-  text-align: justify;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -714,10 +714,10 @@ footer a:hover{
 
 .info-contacto{
     padding: 5px 30px 20px 30px;
-    color: var(--fuente);
+    color: black;
     font-family: var(--FuenteSec);
     font-size: 1.3rem;
-    text-align: justify;
+    text-align: center;
 }
 
 .fieldset {
@@ -816,7 +816,7 @@ fieldset legend {
 
 .about p {
   padding: 2rem 2rem;
-  text-align: justify;
+  text-align: center;
   font-family: var(--FuenteSec);
   font-size: 1.2rem;
 }
