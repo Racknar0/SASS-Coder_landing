@@ -181,12 +181,13 @@ nav li a:active{
   font-family: var(--FuenteSec);
   color: var(--fuente);
   text-align: center;
-  font-size: 2rem;
+  font-size: 1rem;
   position: absolute;
   text-align: center;
   width: 100%;
   top: 10%;
 }
+
 
 /* ---------- fin HEADER ------------- */
 
@@ -463,6 +464,10 @@ nav li a:active{
   }
   .contenedorImagenes1{
     width: min(100%, 20rem);
+  }
+
+  .header__text {
+    font-size: 2rem;
   }
 }
 
