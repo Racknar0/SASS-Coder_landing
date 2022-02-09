@@ -521,9 +521,13 @@ footer a:hover{
   width: 100%;
   height: 20rem;
   object-fit: cover;
-  padding: 1rem;
   border-radius: 2rem;
   border: 4px solid rgb(255, 255, 255);
+}
+
+.gallery__grid img:hover {
+  transform: scale(1.05);
+  transition: .5s;
 }
 
 @media (min-width: 768px) {
@@ -751,7 +755,7 @@ fieldset legend {
 
 .mostrar:hover {
   transform: scale(1.05);
-  border: 3px solid rgb(255, 3, 3);
+  border: 3px solid rgb(81, 1, 88);
   transition: .5s;
 }
 
