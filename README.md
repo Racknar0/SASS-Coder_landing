@@ -2,7 +2,7 @@
 CODER LANDING PAGE 01
 
 ## Construido con 🛠️
-HTML - CSS Nativo
+HTML - Bootstrap y CSS Nativo
 
 ## Autores ✒️
 * **Jonathan Camilo Torres**
