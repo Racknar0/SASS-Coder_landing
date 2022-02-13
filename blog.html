@@ -11,8 +11,9 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <!-- integracion de los estulos y normalizer -->
-    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- integracion de los estilos y bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
     <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600;700;900&display=swap"
@@ -22,129 +23,194 @@
 </head>
 
 <body>
-    <!-- header inicio -->
-    <header>
-
-        <div class="header__arriba">
-            <!-- Insercion de link + imagen + su respectivo alt -->
-            <a class="header__link" href="index.html"><img class="header__logo" src="img/logo.png" alt="logo_coderack">
-                <h1>CodeRack</h1>
+    <!-- HEADER INICIO -->
+    <header class="container d-flex justify-content-center mt-5">
+        <div class="d-flex align-items-center">
+            <a class="linkheader" href="index.html"><img class="header-logo" src="img/logo.png" alt="logoImagen">
+                <h1 class="fw-bold">
+                    Code <span class="text-white fw-bold">Rack</span>
             </a>
-            <!-- menu de navegacion -->
-            <nav class="header__nav">
-
-                <input type="checkbox" id="menu">
-                <label for="menu"><i class="fas fa-bars"></i></label>
-
-                <ul class="ul__nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="galeria.html">Gallery</a></li>
-                    <li class="activo"><a href="blog.html">Blog</a></li>
-                    <li><a href="contacto.html">Contact</a></li>
-                    <li><a href="nosotros.html">About</a></li>
-                </ul>
-            </nav>
-            <!-- boton dark -->
-            <!-- <input type="button" value="Dark Mode"> -->
+            </h1>
         </div>
-
     </header>
 
-    <main class="mainBlog">
+    <!-- NAVBAR -->
+    <div class="py-4 barraNav">
+        <div class="border-top border-bottom py-4">
+            <div class="navbar navbar-expand-lg container navbar-light">
+                <a class="navbar-brand d-lg-none fs-2 fw-bold" href="index.html">
+                    Navega en nuestra Web
+                </a>
 
-        <h1 class="tittle-blog">Blog CodeRack</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <div class="notificacionPpal">
-            <div class="notificacionPpal__img"></div>
-            <p class="adminNotification">ADMINISTRATOR NOTIFICATION: <br> Remember that at coder house we are constantly working, therefore this website
-                is constantly being updated in order to improve the experience of our users, this is a global message
-                which announces changes and news and information related to us.</p>
-        </div>
 
-        <div class="mainBlog__blog">
-            <div class="contenedoArticulos">
-                <h2>ARTICULOS DE LOS USUARIOS</h2>
-                <article class="articulo1 separador">
-                    <div class="articulo1__header user__img"></div>
-                    <div class="articulo1__contenido">Furthermore, being a developer isn’t just about knowing how to
-                        code – it’s about knowing how to use the tools of the trade, specifically developer tools.
-                        Reading tutorials and learning about all their different features could also help you get ahead
-                        in your career.</div>
-                    <div class="articulo1__footer">User: Usuario001</div>
-                </article>
-
-                <article class="articulo2 separador">
-                    <div class="articulo1__header user__img"></div>
-                    <div class="articulo1__contenido">Furthermore, being a developer isn’t just about knowing how to
-                        code – it’s about knowing how to use the tools of the trade, specifically developer tools.
-                        Reading tutorials and learning about all their different features could also help you get ahead
-                        in your career.</div>
-                    <div class="articulo1__footer">User: Usuario002</div>
-                </article>
-
-                <article class="articulo3 separador">
-                    <div class="articulo1__header user__img"></div>
-                    <div class="articulo1__contenido">Furthermore, being a developer isn’t just about knowing how to
-                        code – it’s about knowing how to use the tools of the trade, specifically developer tools.
-                        Reading tutorials and learning about all their different features could also help you get ahead
-                        in your career.</div>
-                    <div class="articulo1__footer">User: Usuario003</div>
-                </article>
+                <div id="navegacion" class="collapse navbar-collapse">
+                    <nav class="navbar-nav container d-flex flex-md-row text-center justify-content-md-between pt-3">
+                        <a class="text-dark text-decoration-none fw-bold mb-2" href="index.html">Home</a>
+                        <a class="text-dark text-decoration-none fw-bold mb-2" href="galeria.html">Gallery</a>
+                        <a class="activa text-dark text-decoration-none fw-bold mb-2" href="blog.html">Blog</a>
+                        <a class="text-dark text-decoration-none fw-bold mb-2" href="contacto.html">Contact</a>
+                        <a class="text-dark text-decoration-none fw-bold mb-2" href="nosotros.html">About</a>
+                    </nav>
+                </div>
             </div>
-            <aside class="aside">
-                <h2>TITULO ASIDE</h2>
-                <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus dicta minus ipsa esse
-                    reprehenderit amet tenetur hic assumenda alias cum aliquam, voluptatem repudiandae. Rem harum
-                    repellat tempore laboriosam corporis maxime Lorem ipsum, dolor sit amet consectetur adipisicing
-                    elit. Similique cumque voluptates quis laudantium voluptatem id aliquam quam ratione pariatur vel
-                    exercitationem ullam, fugiat possimus non sed provident dolore voluptatum nemo?</P>
-                <h2>TITULO2 ASIDE</h2>
-                <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus dicta minus ipsa esse
-                    reprehenderit amet tenetur hic assumenda alias cum aliquam, voluptatem repudiandae. Rem harum
-                    repellat tempore laboriosam corporis maxime Lorem ipsum, dolor sit amet consectetur adipisicing
-                    elit. Similique cumque voluptates quis laudantium voluptatem id aliquam quam ratione pariatur vel
-                    exercitationem ullam, fugiat possimus non sed provident dolore voluptatum nemo?</P>
-                <h2>TITULO3 ASIDE</h2>
-                <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus dicta minus ipsa esse
-                    reprehenderit amet tenetur hic assumenda alias cum aliquam, voluptatem repudiandae. Rem harum
-                    repellat tempore laboriosam corporis maxime Lorem ipsum, dolor sit amet consectetur adipisicing
-                    elit. Similique cumque voluptates quis laudantium voluptatem id aliquam quam ratione pariatur vel
-                    exercitationem ullam, fugiat possimus non sed provident dolore voluptatum nemo?</P>
-                <h2>TITULO4 ASIDE</h2>
-                <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus dicta minus ipsa esse
-                    reprehenderit amet tenetur hic assumenda alias cum aliquam, voluptatem repudiandae. Rem harum
-                    repellat tempore laboriosam corporis maxime Lorem ipsum, dolor sit amet consectetur adipisicing
-                    elit. Similique cumque voluptates quis laudantium voluptatem id aliquam quam ratione pariatur vel
-                    exercitationem ullam, fugiat possimus non sed provident dolore voluptatum nemo?</P>
-            </aside>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <div class="hero">
+        <video class="video" src="media/ident_lg.mp4" autoplay loop muted></video>
+    </div>
+
+
+
+    <main class="mx-2 mx-sm-5">
+        <!-- SECCION1 -->
+        <div class="container-xl px-5 py-5 mb-5 seccion1 border-bottom">
+            <h2 class="text-center text-uppercase mb-5 titulo-galeria border-bottom pb-3">Blog</h2>
+            <div class="row mb-5 pb-5 border-bottom">
+                <div class="col-md-4 d-flex justify-content-center align-items-center mb-5 mb-md-0">
+                    <img class="img-fluid" src="img/admin.png" alt="">
+                </div>
+                <div class="col-md-8 d-flex justify-content-center align-items-center">
+                    <p><span class="fw-bold">ADMINISTRATOR NOTIFICATION:</span><br>Remember that at coder house we are
+                        constantly working, therefore this website
+                        is constantly being updated in order to improve the experience of our users, this is a global
+                        message
+                        which announces changes and news and information related to us.</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-8">
+                    <article class="border-bottom mb-5">
+                        <div class="d-flex justify-content-center">
+                            <img class="img-fluid" src="img/user.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <h3 class="fw-bold mt-5 mb-3">Post Title</h3>
+                            <p>Furthermore, being a developer isn’t just about knowing how to
+                                code – it’s about knowing how to use the tools of the trade, specifically developer
+                                tools.
+                                Reading tutorials and learning about all their different features could also help you
+                                get ahead
+                                in your career. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                                voluptatum, officia quo fugiat optio dolorem velit totam eius aperiam. Assumenda numquam
+                                placeat odit, natus atque nemo incidunt aut illo commodi.</p>
+                                <p class="align-self-start mt-4">Posted By: <span class="fw-bold">User</span></p>
+                        </div>
+                    </article>
+                    <article class="border-bottom mb-5">
+                        <div class="d-flex justify-content-center">
+                            <img class="img-fluid" src="img/user.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <h3 class="fw-bold mt-5 mb-3">Post Title</h3>
+                            <p>Furthermore, being a developer isn’t just about knowing how to
+                                code – it’s about knowing how to use the tools of the trade, specifically developer
+                                tools.
+                                Reading tutorials and learning about all their different features could also help you
+                                get ahead
+                                in your career. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                                voluptatum, officia quo fugiat optio dolorem velit totam eius aperiam. Assumenda numquam
+                                placeat odit, natus atque nemo incidunt aut illo commodi.</p>
+                                <p class="align-self-start mt-4">Posted By: <span class="fw-bold">User</span></p>
+                        </div>
+                    </article>
+                    <article class="border-bottom mb-5">
+                        <div class="d-flex justify-content-center">
+                            <img class="img-fluid" src="img/user.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <h3 class="fw-bold mt-5 mb-3">Post Title</h3>
+                            <p>Furthermore, being a developer isn’t just about knowing how to
+                                code – it’s about knowing how to use the tools of the trade, specifically developer
+                                tools.
+                                Reading tutorials and learning about all their different features could also help you
+                                get ahead
+                                in your career. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                                voluptatum, officia quo fugiat optio dolorem velit totam eius aperiam. Assumenda numquam
+                                placeat odit, natus atque nemo incidunt aut illo commodi.</p>
+                                <p class="align-self-start mt-4">Posted By: <span class="fw-bold">User</span></p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <aside>
+                        <h2 class="text-center mb-5">Aside</h2>
+                        <ul class="ms-md-5 ps-md-5">
+                            <a class="text-decoration-none" href="#"><li>Entrada 1 Fecha</li></a>
+                            <a class="text-decoration-none" href="#"><li>Entrada 2 Fecha
+                                <ul>
+                                    <li>Sub-entrada</li>
+                                    <li>Sub-entrada
+                                        <ul>
+                                            <li>Sub-entrada</li>
+                                            <li>Sub-entrada</li>
+                                            <li>Sub-entrada</li>
+                                        </ul>
+                                    </li>
+                                    <li>Sub-entrada</li>
+                                </ul>
+                            </li></a>
+                            <a class="text-decoration-none" href="#"><li>Entrada 3 Fecha</li></a>
+                            <a class="text-decoration-none" href="#"><li>Entrada 4 Fecha</li></a>
+                            <a class="text-decoration-none" href="#"><li>Entrada 5 Fecha</li></a>
+                            <a class="text-decoration-none" href="#"><li>Entrada 6 Fecha</li></a>
+                        </ul>
+                        <p class="ms-md-3 ps-md-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, rem, earum provident voluptatibus corrupti ipsam, eos perferendis quo a quisquam magni tenetur velit error. Ipsum, nemo eius. Consequatur, id corporis.</p>
+                        <h2 class="text-center mb-5">Aside</h2>
+                        <p class="ms-md-3 ps-md-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, rem, earum provident voluptatibus corrupti ipsam, eos perferendis quo a quisquam magni tenetur velit error. Ipsum, nemo eius. Consequatur, id corporis.</p>
+                    </aside>
+                </div>
+            </div>
+
+
 
         </div>
-
-
-
-
-
-
 
     </main>
 
 
-    <footer>
+
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="mt-5 mb-3">
         <!-- seccion 1 footer -->
-        <h3>All rights reserved</h3>
-        <p>All CodeRack developments are registered trademarks®</p>
+        <h3 class="text-center">All rights reserved</h3>
+        <p class="text-center">All CodeRack developments are registered trademarks®</p>
 
         <!-- seccion 2 footer -->
-        <h3>Follow us on our social networks</h3>
+        <h3 class="text-center">Follow us on our social networks</h3>
 
         <!-- logos redes -->
-        <div class="footer__logos">
-            <a href=""><i class="fab fa-facebook-square"></i></a>
-            <a href=""><i class="fab fa-youtube-square"></i></a>
-            <a href=""><i class="fab fa-twitter-square"></i></a>
-            <a href=""><i class="fab fa-github-square"></i></a>
+        <div class="d-flex justify-content-center">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-youtube-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-github-square"></i></a>
         </div>
     </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
