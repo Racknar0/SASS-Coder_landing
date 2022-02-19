@@ -136,7 +136,7 @@ header h1:hover {
   
 }
 
-@media (min-width: 500px) {
+@media (min-width: 300px) {
   .ns-1 {
     animation-duration: 2s;
     animation-delay: 0s;
@@ -157,7 +157,7 @@ header h1:hover {
       transform: translateY(0);
     }
     80% {
-      transform: scale(1.5);
+      transform: scale(1.2);
     }
     100% {
       transform: scale(1);
