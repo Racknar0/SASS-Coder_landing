@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap");
 
 :root {
   --fuentePPal: "Poppins", sans-serif;
   --FuenteSec: "Vollkorn SC", serif;
   --fuenteTer: "Mochiy Pop P One", sans-serif;
   --fuenteCuar: "Playfair Display", serif;
-  --fuenteQuin:  'Raleway', sans-serif;
-  --bgamarillo: #F8CE27;
+  --fuenteQuin: "Raleway", sans-serif;
+  --bgamarillo: #f8ce27;
   --bgfooter: #d9004b;
   --blanco: #ffffff;
   --negro: #000000;
@@ -38,7 +38,7 @@ h2 {
 }
 
 /* ---------- HEADER ------------- */
-.linkheader{
+.linkheader {
   text-decoration: none !important;
   color: #000000;
 }
@@ -63,6 +63,44 @@ header h1:hover {
   width: 8rem;
 }
 
+@media (max-width: 400px) {
+  .h1 {
+    font-size: 0.5rem !important;
+  }
+  .logo {
+    transform: scale(0.7);
+  }
+}
+
+@media (min-width: 500px) {
+  .logo {
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    animation-name: animarImagen;
+  }
+
+  @keyframes animarImagen {
+    0% {
+      opacity: 0;
+      transform: translateY(-10rem);
+    }
+    30% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    80% {
+      transform: scale(1.3);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
 /* ---------- NAVBAR ------------- */
 #navegacion {
   padding-left: 10rem;
@@ -70,7 +108,7 @@ header h1:hover {
 }
 
 .navbar-dark {
-  color: #000000 !important; 
+  color: #000000 !important;
 }
 
 .navbar-toggler {
@@ -79,29 +117,62 @@ header h1:hover {
 }
 
 .navbar-nav a {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
 }
 .navbar-nav a:hover {
   transform: scale(1.3);
-  transition: .3s;
-  background: linear-gradient(0deg, rgb(255, 255, 255) 4%, rgb(248, 206, 39) 100%);
+  transition: 0.3s;
+  background: linear-gradient(
+    0deg,
+    rgb(255, 255, 255) 4%,
+    rgb(248, 206, 39) 100%
+  );
   border-radius: 1rem;
 }
 
 .activa {
   color: #2c1b00 !important;
-  font-size: 2.5rem !important;
+  text-decoration: overline !important;
   
 }
 
+@media (min-width: 500px) {
+  .ns-1 {
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    animation-name: animarImagen1;
+  }
+
+  @keyframes animarImagen1 {
+    0% {
+      opacity: 0;
+      transform: translateY(10rem);
+    }
+    30% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    80% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
 /* ---------- HERO ------------- */
-.hero{
+.hero {
   margin-top: 5rem;
 }
 
-.video{
+.video {
   width: 100%;
-  margin-bottom: -.8rem;
+  margin-bottom: -0.8rem;
 }
 
 /* ---------- SECCION1 ------------- */
@@ -111,11 +182,10 @@ header h1:hover {
 }
 
 @media (min-width: 768px) {
-    .bordertexto {
-      border-right: 1px solid #c5c5c5;
-    }
+  .bordertexto {
+    border-right: 1px solid #c5c5c5;
+  }
 }
-
 
 /* ---------- SECCION2 ------------- */
 
@@ -129,19 +199,18 @@ header h1:hover {
   transition: 200ms;
 }
 
-.seccion2img1{
+.seccion2img1 {
   background-image: url(../img/1.jpg);
 }
 .seccion2img2 {
   background-image: url(../img/2.jpg);
 }
-.seccion2img3{
+.seccion2img3 {
   background-image: url(../img/3.jpg);
 }
 .seccion2img4 {
   background-image: url(../img/4.jpg);
 }
-
 
 /* ------- SECCION 3 ------- */
 .contenedorBotonIndex {
@@ -152,11 +221,10 @@ header h1:hover {
   font-size: 2rem;
   text-transform: uppercase;
   border-radius: 1rem;
-
 }
 
 .lineaBtn {
-  content: '';
+  content: "";
   width: 100%;
   height: 1rem;
   display: block;
@@ -170,11 +238,10 @@ header h1:hover {
   text-align: center;
 }
 @media (min-width: 768px) {
-    .textoSeccion3 {
-      padding-left: 8rem;
-      padding-right: 8rem;
-      
-    }
+  .textoSeccion3 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
 }
 /* ------- SECCION 4 ------- */
 
@@ -189,13 +256,13 @@ header h1:hover {
   transition: 200ms;
 }
 
-.seccion4img1{
+.seccion4img1 {
   background-image: url(../img/5.png);
 }
 .seccion4img2 {
   background-image: url(../img/6.png);
 }
-.seccion4img3{
+.seccion4img3 {
   background-image: url(../img/7.jpg);
 }
 
@@ -203,14 +270,13 @@ header h1:hover {
 .fab {
   font-size: 4rem;
   color: #000000;
-  margin: .7rem;
+  margin: 0.7rem;
 }
 
 .fab:hover {
   transform: scale(1.1);
   color: #a0a0a0;
 }
-
 
 /* ---- GALERIA ----- */
 .titulo-galeria {
@@ -219,4 +285,17 @@ header h1:hover {
 
 .gridGaleria img:hover {
   transform: scale(1.05);
+}
+
+.galeria a {
+  cursor: pointer;
+}
+.galeria img:hover {
+  transform: scale(1.01);
+}
+.btnModal{
+  cursor: pointer;
+}
+.btnModal:hover{
+  transform: scale(1.1);
 }
