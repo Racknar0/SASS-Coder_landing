@@ -14,6 +14,11 @@ HTML - Bootstrap y CSS Nativo
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
       alt="bootstrap" width="100" height="100" /> </a> 
       
+-  Visualización :-
+<a href="https://landing-coder.netlify.app/" target="_blank"
+    rel="noreferrer">https://landing-coder.netlify.app/</a>
+
+
 
 ## Autores ✒️
 * **Jonathan Camilo Torres**
@@ -23,4 +28,4 @@ HTML - Bootstrap y CSS Nativo
 * Comenta a otros sobre este proyecto 📢
 * Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
 * Da las gracias públicamente 🤓.
-* etc.
+
