@@ -1,0 +1,23 @@
+{
+  "name": "proyecto-final",
+  "version": "1.0.0",
+  "description": "CODER LANDING PAGE 01",
+  "main": "index.js",
+  "scripts": {
+    "compilar:sass": "sass --watch src/scss:build/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Racknar0/landing_01.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Racknar0/landing_01/issues"
+  },
+  "homepage": "https://github.com/Racknar0/landing_01#readme",
+  "devDependencies": {
+    "bootstrap": "^5.1.3",
+    "sass": "^1.49.8"
+  }
+}

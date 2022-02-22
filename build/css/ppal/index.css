@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap");
+/* @forward 'galeria'; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*declaracion importante*/
+html {
+  box-sizing: border-box;
+  color: #000000;
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f8ce27;
+  font-family: "Vollkorn SC", serif;
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
+/* ---------- HEADER ------------- */
+.linkheader {
+  text-decoration: none !important;
+  color: #000000;
+}
+
+.linkheader:hover {
+  color: #000000;
+  transform: scale(1.1);
+}
+
+header h1 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 6rem;
+}
+
+header h1:hover {
+  transform: scale(1.1);
+}
+
+.header-logo {
+  height: 8rem;
+  width: 8rem;
+}
+
+@media (max-width: 400px) {
+  .h1 {
+    font-size: 0.5rem !important;
+  }
+
+  .logo {
+    transform: scale(0.7);
+  }
+}
+@media (min-width: 500px) {
+  .logo {
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    animation-name: animarImagen;
+  }
+
+  @keyframes animarImagen {
+    0% {
+      opacity: 0;
+      transform: translateY(-10rem);
+    }
+    30% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    80% {
+      transform: scale(1.3);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+/* ---------- NAVBAR ------------- */
+#navegacion {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.navbar-dark {
+  color: #000000 !important;
+}
+
+.navbar-toggler {
+  width: 50px;
+  height: 30px;
+}
+
+.navbar-nav a {
+  font-size: 2.2rem;
+}
+
+.navbar-nav a:hover {
+  transform: scale(1.3);
+  transition: 0.3s;
+  background: linear-gradient(0deg, white 4%, #f8ce27 100%);
+  border-radius: 1rem;
+}
+
+.activa {
+  color: #2c1b00 !important;
+  text-decoration: overline !important;
+}
+
+@media (min-width: 300px) {
+  .ns-1 {
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    animation-name: animarImagen1;
+  }
+
+  @keyframes animarImagen1 {
+    0% {
+      opacity: 0;
+      transform: translateY(10rem);
+    }
+    30% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    80% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+/* ---------- HERO ------------- */
+.hero {
+  margin-top: 5rem;
+}
+
+.video {
+  width: 100%;
+  margin-bottom: -0.8rem;
+}
+
+/* ---------- SECCION1 ------------- */
+.seccion1 {
+  background-color: #ffffff;
+  font-family: "Raleway", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .bordertexto {
+    border-right: 1px solid #c5c5c5;
+  }
+}
+/* ---------- SECCION2 ------------- */
+.seccion2img {
+  background-size: cover;
+  height: 300px;
+  border-radius: 2rem;
+}
+
+.seccion2img:hover {
+  transform: scale(1.02);
+  transition: 200ms;
+}
+
+.seccion2img1 {
+  background-image: url(../../img/1.jpg);
+}
+
+.seccion2img2 {
+  background-image: url(../../img/2.jpg);
+}
+
+.seccion2img3 {
+  background-image: url(../../img/3.jpg);
+}
+
+.seccion2img4 {
+  background-image: url(../../img/4.jpg);
+}
+
+/* ------- SECCION 3 ------- */
+.contenedorBotonIndex {
+  margin-top: 8rem;
+}
+
+.botonIndex {
+  font-size: 2rem;
+  text-transform: uppercase;
+  border-radius: 1rem;
+}
+
+.lineaBtn {
+  content: "";
+  width: 100%;
+  height: 1rem;
+  display: block;
+  margin: -4.3rem auto 0 auto;
+  background-color: #dc3545;
+  background-size: 4rem;
+}
+
+.textoSeccion3 {
+  margin-top: 4.3rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .textoSeccion3 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+/* ------- SECCION 4 ------- */
+.seccion4img {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  border-radius: 2rem;
+}
+
+.seccion4img:hover {
+  transform: scale(1.02);
+  transition: 200ms;
+}
+
+.seccion4img1 {
+  background-image: url(../../img/5.png);
+}
+
+.seccion4img2 {
+  background-image: url(../../img/6.png);
+}
+
+.seccion4img3 {
+  background-image: url(../../img/7.jpg);
+}
+
+/* FOOTER */
+.fab {
+  font-size: 4rem;
+  color: #000000;
+  margin: 0.7rem;
+}
+
+.fab:hover {
+  transform: scale(1.1);
+  color: #a0a0a0;
+}
+
+/*# sourceMappingURL=index.css.map */

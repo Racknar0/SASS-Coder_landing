@@ -1,17 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap");
+/* @forward 'galeria'; */
 
-:root {
-  --fuentePPal: "Poppins", sans-serif;
-  --FuenteSec: "Vollkorn SC", serif;
-  --fuenteTer: "Mochiy Pop P One", sans-serif;
-  --fuenteCuar: "Playfair Display", serif;
-  --fuenteQuin: "Raleway", sans-serif;
-  --bgamarillo: #f8ce27;
-  --bgfooter: #d9004b;
-  --blanco: #ffffff;
-  --negro: #000000;
-  --fuente: #333333;
-}
+
+$fuentePPal: "Poppins", sans-serif;
+$FuenteSec: "Vollkorn SC", serif;
+$fuenteTer: "Mochiy Pop P One", sans-serif;
+$fuenteCuar: "Playfair Display", serif;
+$fuenteQuin: "Raleway", sans-serif;
+$bgamarillo: #f8ce27;
+$bgfooter: #d9004b;
+$blanco: #ffffff;
+$negro: #000000;
+$fuente: #333333;
+
 
 * {
   margin: 0;
@@ -22,19 +23,19 @@
 /*declaracion importante*/
 html {
   box-sizing: border-box;
-  color: var(--negro);
+  color: $negro;
   /* 1rem = 10px */
   font-size: 62.5%;
 }
 
 body {
-  background-color: var(--bgamarillo);
-  font-family: var(--FuenteSec);
+  background-color: $bgamarillo;
+  font-family: $FuenteSec;
   font-size: 1.6rem;
 }
 
 h2 {
-  font-family: var(--fuenteCuar);
+  font-family: $fuenteCuar;
 }
 
 /* ---------- HEADER ------------- */
@@ -50,7 +51,7 @@ h2 {
 
 header h1 {
   text-align: center;
-  font-family: var(--fuenteCuar);
+  font-family: $fuenteCuar;
   font-size: 6rem;
 }
 
@@ -177,8 +178,8 @@ header h1:hover {
 
 /* ---------- SECCION1 ------------- */
 .seccion1 {
-  background-color: var(--blanco);
-  font-family: var(--fuenteQuin);
+  background-color: $blanco;
+  font-family: $fuenteQuin;
 }
 
 @media (min-width: 768px) {
@@ -200,16 +201,16 @@ header h1:hover {
 }
 
 .seccion2img1 {
-  background-image: url(../img/1.jpg);
+  background-image: url(../../img/1.jpg);
 }
 .seccion2img2 {
-  background-image: url(../img/2.jpg);
+  background-image: url(../../img/2.jpg);
 }
 .seccion2img3 {
-  background-image: url(../img/3.jpg);
+  background-image: url(../../img/3.jpg);
 }
 .seccion2img4 {
-  background-image: url(../img/4.jpg);
+  background-image: url(../../img/4.jpg);
 }
 
 /* ------- SECCION 3 ------- */
@@ -257,13 +258,13 @@ header h1:hover {
 }
 
 .seccion4img1 {
-  background-image: url(../img/5.png);
+  background-image: url(../../img/5.png);
 }
 .seccion4img2 {
-  background-image: url(../img/6.png);
+  background-image: url(../../img/6.png);
 }
 .seccion4img3 {
-  background-image: url(../img/7.jpg);
+  background-image: url(../../img/7.jpg);
 }
 
 /* FOOTER */
@@ -276,26 +277,4 @@ header h1:hover {
 .fab:hover {
   transform: scale(1.1);
   color: #a0a0a0;
-}
-
-/* ---- GALERIA ----- */
-.titulo-galeria {
-  font-size: 3rem;
-}
-
-.gridGaleria img:hover {
-  transform: scale(1.05);
-}
-
-.galeria a {
-  cursor: pointer;
-}
-.galeria img:hover {
-  transform: scale(1.01);
-}
-.btnModal{
-  cursor: pointer;
-}
-.btnModal:hover{
-  transform: scale(1.1);
 }
