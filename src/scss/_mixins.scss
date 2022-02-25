@@ -1,0 +1,40 @@
+// Tamaños de Media Queries
+$tam1: 300px;
+$tam2: 400px;
+$tam3: 500px;
+$tam4: 768px;
+
+/* %lineaBtn {
+  content: "";
+  width: 100%;
+  height: 1rem;
+  display: block;
+  margin: -4.3rem auto 0 auto;
+  background-size: 4rem;
+} */
+
+
+
+@mixin tam1 {
+  @media (min-width: $tam1) {
+    @content;
+  }
+}
+
+@mixin tam2 {
+  @media (min-width: $tam2) {
+    @content;
+  }
+}
+
+@mixin tam3 {
+  @media (min-width: $tam3) {
+    @content;
+  }
+}
+
+@mixin tam4 {
+  @media (min-width: $tam4) {
+    @content;
+  }
+}

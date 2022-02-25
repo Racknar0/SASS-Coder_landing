@@ -1,25 +1,17 @@
 /* ---- GALERIA ----- */
-.titulo-galeria {
+main .titulo-galeria {
   font-size: 3rem;
 }
-
-.gridGaleria img:hover {
-  transform: scale(1.05);
-}
-
-.galeria a {
+main .galeria a {
   cursor: pointer;
 }
-
-.galeria img:hover {
+main .galeria img:hover {
   transform: scale(1.01);
 }
-
-.btnModal {
+main .btnModal {
   cursor: pointer;
 }
-
-.btnModal:hover {
+main .btnModal:hover {
   transform: scale(1.1);
 }
 
